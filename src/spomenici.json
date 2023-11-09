@@ -1,0 +1,3088 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-11-08T02:31:14Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32885596",
+        "historic": "monument",
+        "int_name": "Francuski Grobišta",
+        "landuse": "cemetery",
+        "name": "Француски гробишта",
+        "name:en": "French Cemetery",
+        "name:pl": "Cmentarz francuski"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.4304695,
+              42.0083586
+            ],
+            [
+              21.429911,
+              42.0088281
+            ],
+            [
+              21.429202,
+              42.0083349
+            ],
+            [
+              21.4297575,
+              42.0078839
+            ],
+            [
+              21.4304695,
+              42.0083586
+            ]
+          ]
+        ]
+      },
+      "id": "way/32885596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/159068224",
+        "building": "yes",
+        "historic": "monument",
+        "int_name": "Spomenik Kosturnica",
+        "name": "Споменик Костурница"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.722504,
+              42.1455574
+            ],
+            [
+              21.7224074,
+              42.1453943
+            ],
+            [
+              21.7224879,
+              42.1453664
+            ],
+            [
+              21.7224772,
+              42.1453386
+            ],
+            [
+              21.7224772,
+              42.1452988
+            ],
+            [
+              21.7224879,
+              42.1452789
+            ],
+            [
+              21.7225254,
+              42.1452551
+            ],
+            [
+              21.7225791,
+              42.1452392
+            ],
+            [
+              21.7226327,
+              42.1452352
+            ],
+            [
+              21.7226864,
+              42.1452511
+            ],
+            [
+              21.7227239,
+              42.1452988
+            ],
+            [
+              21.7228151,
+              42.145275
+            ],
+            [
+              21.7228849,
+              42.1454341
+            ],
+            [
+              21.7226787,
+              42.1454838
+            ],
+            [
+              21.722504,
+              42.1455574
+            ]
+          ]
+        ]
+      },
+      "id": "way/159068224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/192125506",
+        "alt_name:mk": "Кичевско кале",
+        "building": "yes",
+        "historic": "monument",
+        "name": "Китино Кале",
+        "name:en": "Kita Castle",
+        "name:mk": "Китино Кале",
+        "name:sq": "Kalaja e Kërçovës",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              20.9666504,
+              41.5130747
+            ],
+            [
+              20.9665451,
+              41.5131593
+            ],
+            [
+              20.9664496,
+              41.5131873
+            ],
+            [
+              20.9663461,
+              41.5131884
+            ],
+            [
+              20.966251,
+              41.5131633
+            ],
+            [
+              20.9661627,
+              41.513107
+            ],
+            [
+              20.9661093,
+              41.5130169
+            ],
+            [
+              20.9661137,
+              41.5129178
+            ],
+            [
+              20.9662072,
+              41.5128082
+            ],
+            [
+              20.9663626,
+              41.5127586
+            ],
+            [
+              20.9665057,
+              41.5127743
+            ],
+            [
+              20.9666085,
+              41.5128289
+            ],
+            [
+              20.9666706,
+              41.5129108
+            ],
+            [
+              20.9666803,
+              41.5130053
+            ],
+            [
+              20.9666504,
+              41.5130747
+            ]
+          ]
+        ]
+      },
+      "id": "way/192125506"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/217568679",
+        "artist_name": "Jovan Grabulovski;Iskra Grabuloska",
+        "building": "yes",
+        "historic": "monument",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D0%B8%D1%83%D0%BC_-_%D0%9A%D1%80%D1%83%D1%88%D0%B5%D0%B2%D0%BE.jpg",
+        "name": "Македониум",
+        "tourism": "museum",
+        "wikidata": "Q2717956"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.248402,
+              41.3775293
+            ],
+            [
+              21.2483536,
+              41.3775307
+            ],
+            [
+              21.2483072,
+              41.3775216
+            ],
+            [
+              21.2482701,
+              41.3775052
+            ],
+            [
+              21.2482386,
+              41.3774806
+            ],
+            [
+              21.2482205,
+              41.3774566
+            ],
+            [
+              21.2482083,
+              41.3774218
+            ],
+            [
+              21.2482089,
+              41.3773912
+            ],
+            [
+              21.248217,
+              41.3773666
+            ],
+            [
+              21.2482347,
+              41.3773402
+            ],
+            [
+              21.2482592,
+              41.3773185
+            ],
+            [
+              21.2482985,
+              41.377298
+            ],
+            [
+              21.2483414,
+              41.3772873
+            ],
+            [
+              21.2483663,
+              41.3772854
+            ],
+            [
+              21.2483977,
+              41.3772868
+            ],
+            [
+              21.2484598,
+              41.3773046
+            ],
+            [
+              21.2484866,
+              41.3773206
+            ],
+            [
+              21.2485117,
+              41.3773445
+            ],
+            [
+              21.2485286,
+              41.3773732
+            ],
+            [
+              21.2485345,
+              41.377395
+            ],
+            [
+              21.2485344,
+              41.3774223
+            ],
+            [
+              21.248524,
+              41.3774535
+            ],
+            [
+              21.2485063,
+              41.3774784
+            ],
+            [
+              21.2484793,
+              41.377501
+            ],
+            [
+              21.2484459,
+              41.377518
+            ],
+            [
+              21.248402,
+              41.3775293
+            ]
+          ]
+        ]
+      },
+      "id": "way/217568679"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/239422349",
+        "addr:city": "Cкoпje",
+        "addr:city:en": "Skopje",
+        "addr:country": "MK",
+        "addr:housenumber": "4А",
+        "addr:postcode": "1000",
+        "addr:street": "11 Октомври",
+        "building": "yes",
+        "email": "PortaMK@mmb.org.mk",
+        "historic": "monument",
+        "int_name": "Porta Makedonija",
+        "name": "Порта Македонија",
+        "name:en": "Porta Macedonia",
+        "name:lt": "Triumfo arka",
+        "name:tr": "Porta Macedonia",
+        "phone": "+389 2 3151141",
+        "wikidata": "Q3078453",
+        "wikimedia_commons": "Category:Porta Makedonija",
+        "wikipedia": "en:Porta Macedonia"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.4322421,
+              41.9944587
+            ],
+            [
+              21.4323193,
+              41.9943429
+            ],
+            [
+              21.4324977,
+              41.9944086
+            ],
+            [
+              21.4326086,
+              41.9944495
+            ],
+            [
+              21.4325314,
+              41.9945653
+            ],
+            [
+              21.4324178,
+              41.9945234
+            ],
+            [
+              21.4322421,
+              41.9944587
+            ]
+          ]
+        ]
+      },
+      "id": "way/239422349"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/445947375",
+        "historic": "monument",
+        "name": "Гоце Делчев"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.1819881,
+              41.7363697
+            ],
+            [
+              22.1820207,
+              41.7362258
+            ],
+            [
+              22.1822222,
+              41.7362512
+            ],
+            [
+              22.1821896,
+              41.7363951
+            ],
+            [
+              22.1819881,
+              41.7363697
+            ]
+          ]
+        ]
+      },
+      "id": "way/445947375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/553070358",
+        "historic": "monument",
+        "name": "Колонада"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.4359129,
+              41.9963096
+            ],
+            [
+              21.4359551,
+              41.9963325
+            ],
+            [
+              21.4359221,
+              41.9963659
+            ],
+            [
+              21.4358939,
+              41.996387
+            ],
+            [
+              21.435873,
+              41.9963997
+            ],
+            [
+              21.435847,
+              41.9964132
+            ],
+            [
+              21.4358222,
+              41.9964247
+            ],
+            [
+              21.4357917,
+              41.996438
+            ],
+            [
+              21.4357621,
+              41.9964478
+            ],
+            [
+              21.4357269,
+              41.996456
+            ],
+            [
+              21.4356966,
+              41.9964619
+            ],
+            [
+              21.4356679,
+              41.9964661
+            ],
+            [
+              21.435637,
+              41.9964689
+            ],
+            [
+              21.4356068,
+              41.9964697
+            ],
+            [
+              21.4355715,
+              41.9964676
+            ],
+            [
+              21.4355198,
+              41.9964608
+            ],
+            [
+              21.4355333,
+              41.9964226
+            ],
+            [
+              21.4355796,
+              41.9964279
+            ],
+            [
+              21.4356096,
+              41.9964295
+            ],
+            [
+              21.4356404,
+              41.9964279
+            ],
+            [
+              21.4356619,
+              41.9964257
+            ],
+            [
+              21.4356849,
+              41.9964221
+            ],
+            [
+              21.4357074,
+              41.996418
+            ],
+            [
+              21.435727,
+              41.9964133
+            ],
+            [
+              21.4357519,
+              41.9964059
+            ],
+            [
+              21.4357734,
+              41.9963984
+            ],
+            [
+              21.4357938,
+              41.9963902
+            ],
+            [
+              21.4358179,
+              41.9963794
+            ],
+            [
+              21.4358411,
+              41.9963666
+            ],
+            [
+              21.4358601,
+              41.9963549
+            ],
+            [
+              21.4358762,
+              41.9963428
+            ],
+            [
+              21.4359129,
+              41.9963096
+            ]
+          ]
+        ]
+      },
+      "id": "way/553070358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/679215630",
+        "access": "yes",
+        "historic": "monument",
+        "name": "Александар Македонски",
+        "wikimedia_commons": "File:Споменикот на Александар Македонски во Штип.jpg"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.1940832,
+              41.7372303
+            ],
+            [
+              22.1940888,
+              41.7372426
+            ],
+            [
+              22.1940886,
+              41.7372556
+            ],
+            [
+              22.1940826,
+              41.7372678
+            ],
+            [
+              22.1940716,
+              41.7372779
+            ],
+            [
+              22.1940567,
+              41.7372846
+            ],
+            [
+              22.1940397,
+              41.7372873
+            ],
+            [
+              22.1940224,
+              41.7372857
+            ],
+            [
+              22.1940069,
+              41.7372799
+            ],
+            [
+              22.1939947,
+              41.7372706
+            ],
+            [
+              22.1939874,
+              41.7372588
+            ],
+            [
+              22.1939856,
+              41.7372467
+            ],
+            [
+              22.1939891,
+              41.7372347
+            ],
+            [
+              22.1939973,
+              41.7372241
+            ],
+            [
+              22.1940096,
+              41.7372159
+            ],
+            [
+              22.1940247,
+              41.7372111
+            ],
+            [
+              22.194041,
+              41.73721
+            ],
+            [
+              22.194058,
+              41.737213
+            ],
+            [
+              22.1940726,
+              41.7372201
+            ],
+            [
+              22.1940832,
+              41.7372303
+            ]
+          ]
+        ]
+      },
+      "id": "way/679215630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/704079412",
+        "historic": "monument",
+        "name": "Велешки Гемиџија"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.7833978,
+              41.7161653
+            ],
+            [
+              21.7834044,
+              41.7161334
+            ],
+            [
+              21.7834433,
+              41.7161387
+            ],
+            [
+              21.7834367,
+              41.7161698
+            ],
+            [
+              21.7833978,
+              41.7161653
+            ]
+          ]
+        ]
+      },
+      "id": "way/704079412"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/839150824",
+        "historic": "monument",
+        "name": "Споменик „Александар Серафимов“"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              21.9397788,
+              41.8647467
+            ],
+            [
+              21.9397769,
+              41.8647035
+            ],
+            [
+              21.939838,
+              41.8647009
+            ],
+            [
+              21.9398529,
+              41.8647087
+            ],
+            [
+              21.9398586,
+              41.8647227
+            ],
+            [
+              21.9398523,
+              41.8647367
+            ],
+            [
+              21.9398348,
+              41.8647451
+            ],
+            [
+              21.9397788,
+              41.8647467
+            ]
+          ]
+        ]
+      },
+      "id": "way/839150824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1044325422",
+        "historic": "monument",
+        "name": "Споменин на Слободата",
+        "name:en": "Freedom Monument"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.4068486,
+              41.9191013
+            ],
+            [
+              22.4067964,
+              41.9190815
+            ],
+            [
+              22.4067643,
+              41.9190479
+            ],
+            [
+              22.4067751,
+              41.9190119
+            ],
+            [
+              22.4067251,
+              41.918961
+            ],
+            [
+              22.406719,
+              41.9189202
+            ],
+            [
+              22.4068331,
+              41.9187553
+            ],
+            [
+              22.4068952,
+              41.9187881
+            ],
+            [
+              22.406918,
+              41.9187762
+            ],
+            [
+              22.4069404,
+              41.9187809
+            ],
+            [
+              22.4069716,
+              41.9187614
+            ],
+            [
+              22.407018,
+              41.9187555
+            ],
+            [
+              22.4070321,
+              41.9187362
+            ],
+            [
+              22.4071656,
+              41.9187089
+            ],
+            [
+              22.4071503,
+              41.9187441
+            ],
+            [
+              22.4071699,
+              41.9187537
+            ],
+            [
+              22.4071929,
+              41.9187371
+            ],
+            [
+              22.4072326,
+              41.9187605
+            ],
+            [
+              22.407203,
+              41.9188114
+            ],
+            [
+              22.4072483,
+              41.9188247
+            ],
+            [
+              22.4072758,
+              41.9188604
+            ],
+            [
+              22.4072124,
+              41.9189225
+            ],
+            [
+              22.4071823,
+              41.9189175
+            ],
+            [
+              22.4070488,
+              41.9190765
+            ],
+            [
+              22.4069921,
+              41.9190864
+            ],
+            [
+              22.406942,
+              41.919069
+            ],
+            [
+              22.4069153,
+              41.9191013
+            ],
+            [
+              22.4068486,
+              41.9191013
+            ]
+          ]
+        ]
+      },
+      "id": "way/1044325422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1146996488",
+        "historic": "monument",
+        "name": "Св Кирил и Методи"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              22.1882763,
+              41.736292
+            ],
+            [
+              22.1882821,
+              41.7362743
+            ],
+            [
+              22.1883154,
+              41.7362804
+            ],
+            [
+              22.1883096,
+              41.736298
+            ],
+            [
+              22.1882763,
+              41.736292
+            ]
+          ]
+        ]
+      },
+      "id": "way/1146996488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/411079115",
+        "bridge": "yes",
+        "bridge:structure": "arch",
+        "foot": "yes",
+        "highway": "pedestrian",
+        "historic": "monument",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Камен мост",
+        "name:bg": "Камен мост",
+        "name:de": "Steinbrücke",
+        "name:en": "Stone Bridge",
+        "name:es": "Puente de Piedra",
+        "name:fr": "Pont de pierre",
+        "name:pl": "Kamienny Most",
+        "name:sq": "Ura e Gurit",
+        "name:sr": "Душанов мост",
+        "name:tr": "Taşköprü",
+        "name:uk": "Кам'яний міст",
+        "smoothness": "intermediate",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            21.4341939,
+            41.997767
+          ],
+          [
+            21.4334562,
+            41.9972545
+          ],
+          [
+            21.432259,
+            41.9964385
+          ]
+        ]
+      },
+      "id": "way/411079115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/367853384",
+        "artist": "Кристина Пауновска",
+        "cost": "272.792 euro",
+        "description": "Историско значење Питу Гули (1865 - 12 август 1903) — македонски револуционер со влашко потекло, учесник во македонското револуционерно движење, член и војвода на Македонската револуционерна организација.\nСовременици сведочат дека Питу Гули имал завршено",
+        "historic": "monument",
+        "investitor": "Општина Центар",
+        "learnica": "Уметничка леарница Јеремиќ",
+        "name": "Питу Гули",
+        "start_date": "2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.433319,
+          41.9936737
+        ]
+      },
+      "id": "node/367853384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/367860262",
+        "historic": "monument",
+        "name": "Гоце Делчев"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4233737,
+          42.0032812
+        ]
+      },
+      "id": "node/367860262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/382635381",
+        "historic": "monument",
+        "name": "Костурница",
+        "name:en": "Kosturnica",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.0228463,
+          41.4325212
+        ]
+      },
+      "id": "node/382635381"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/410115784",
+        "historic": "monument",
+        "int_name": "Mečkin Kamen",
+        "name": "Мечкин Камен",
+        "name:en": "Mechkin Kamen",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.257898,
+          41.3377228
+        ]
+      },
+      "id": "node/410115784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/410115785",
+        "historic": "monument",
+        "int_name": "Sliva",
+        "name": "Слива"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2273776,
+          41.3880768
+        ]
+      },
+      "id": "node/410115785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/444334991",
+        "historic": "monument",
+        "int_name": "Spomenik na slobodata",
+        "name": "Споменик на слободата",
+        "name:en": "Monument of Freedom",
+        "tourism": "attraction",
+        "wikidata": "Q3402642",
+        "wikipedia": "mk:Споменик на слободата (Кочани)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4069917,
+          41.9188903
+        ]
+      },
+      "id": "node/444334991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/473902990",
+        "historic": "monument",
+        "name": "WWII Battle - 17th Macedonian Brigade ws Bulgarian army",
+        "name:mk": "2ра Светска војна - Битка помеѓу 17та Македонска Ударна Бригада и Бугарската војска"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3507979,
+          42.2916094
+        ]
+      },
+      "id": "node/473902990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/495558836",
+        "historic": "monument",
+        "int_name": "Spomenik na Revolucijata",
+        "name": "Споменик на Револуцијата",
+        "name:en": "Monument of the Revolution"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.679835,
+          41.1776616
+        ]
+      },
+      "id": "node/495558836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/908273421",
+        "artist_name": "Валентина Стефановска",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "int_name": "Voin na Konj",
+        "layer": "2",
+        "memorial": "statue",
+        "name": "Споменик на Александар Македонски",
+        "name:en": "Statue of Alexander the Great",
+        "start_date": "08.09.2011",
+        "tourism": "artwork",
+        "wikidata": "Q3497603",
+        "wikimedia_commons": "Category:Warrior on Horseback (Skopje)",
+        "wikipedia": "mk:Воин на коњ (Скопје)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4314474,
+          41.9959035
+        ]
+      },
+      "id": "node/908273421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1708412126",
+        "historic": "monument",
+        "layer": "2",
+        "name": "Zena",
+        "name:mk": "Жена"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7200501,
+          42.1355189
+        ]
+      },
+      "id": "node/1708412126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1831180502",
+        "amenity": "place_of_worship",
+        "denomination": "orthodox",
+        "historic": "monument",
+        "int_name": "Manastir Sv. Andrej",
+        "name": "Манастир Св. Андреј",
+        "name:en": "Monastery St. Andrej",
+        "name:pl": "Cerkiew św. Andrzeja",
+        "name:tr": "Monastery St. Andrej",
+        "place_of_worship:type": "monastery",
+        "religion": "christian",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2991931,
+          41.9505936
+        ]
+      },
+      "id": "node/1831180502"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1857486060",
+        "historic": "monument",
+        "layer": "1",
+        "name": "Филип Втори"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4617772,
+          42.0017233
+        ]
+      },
+      "id": "node/1857486060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1859114111",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Philip_II_of_Macedon_monument_in_Skopje.JPG",
+        "inscription": "Филип II Македонски",
+        "memorial": "statue",
+        "name": "Филип II Македонски",
+        "name:de": "Philipp II. (Makedonien)",
+        "name:en": "Philip II of Macedon",
+        "name:pl": "Filip II Macedoński",
+        "subject:wikidata": "Q130650",
+        "subject:wikipedia": "mk:Филип II Македонски",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4349949,
+          41.9984602
+        ]
+      },
+      "id": "node/1859114111"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1866944575",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "inscription": "Св. Климент Охридски",
+        "int_name": "Sv. Kliment Ohridski",
+        "memorial": "statue",
+        "name": "Св. Климент Охридски",
+        "name:en": "Clement of Ohrid",
+        "tourism": "artwork",
+        "wikidata": "Q158504",
+        "wikipedia": "mk:Свети Климент Охридски"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4254968,
+          41.9983057
+        ]
+      },
+      "id": "node/1866944575"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1867151652",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "inscription": "Скендербег",
+        "memorial": "statue",
+        "name": "Скендербег",
+        "name:de": "Skanderbeg",
+        "name:en": "Skanderbeg",
+        "name:sq": "Skënderbeu",
+        "tourism": "artwork",
+        "wikidata": "Q12289741",
+        "wikimedia_commons": "Category:Skenderbeg Monument (Skopje)",
+        "wikipedia": "en:Skanderbeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.437162,
+          41.9993163
+        ]
+      },
+      "id": "node/1867151652"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1867606193",
+        "historic": "monument",
+        "name": "Маркова Нога",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.1195933,
+          40.8570205
+        ]
+      },
+      "id": "node/1867606193"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1995790447",
+        "historic": "monument",
+        "int_name": "Josip Broz - Tito",
+        "name": "Јосип Броз - Тито"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7194275,
+          42.1355778
+        ]
+      },
+      "id": "node/1995790447"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2026119373",
+        "historic": "monument",
+        "name": "Sahat Kula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9108574,
+          41.794932
+        ]
+      },
+      "id": "node/2026119373"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2026911763",
+        "historic": "monument",
+        "name": "Саат кула",
+        "name:sq": "Sahat Kulla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9702432,
+          41.5119269
+        ]
+      },
+      "id": "node/2026911763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2026930302",
+        "historic": "monument",
+        "name": "Саат кула"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7840512,
+          41.7140782
+        ]
+      },
+      "id": "node/2026930302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2136716883",
+        "historic": "monument",
+        "int_name": "Kude sat",
+        "name": "Куде сат"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7192303,
+          42.1346962
+        ]
+      },
+      "id": "node/2136716883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2189840728",
+        "historic": "monument",
+        "name": "Народен Херој Кузман Јосифоски-Питу",
+        "name:en": "People's hero Kuzman Josifoski-Pitu",
+        "name:mk": "Народен Херој Кузман Јосифоски-Питу"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5519842,
+          41.3451182
+        ]
+      },
+      "id": "node/2189840728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2189840898",
+        "historic": "monument",
+        "name": "Пеце Атанасоски"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.554267,
+          41.3451518
+        ]
+      },
+      "id": "node/2189840898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2189840958",
+        "historic": "monument",
+        "name": "Ѓорче Петров",
+        "name:en": "Gjorche Petrov"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5522173,
+          41.3452617
+        ]
+      },
+      "id": "node/2189840958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2269431831",
+        "historic": "monument",
+        "name": "Никола Карев"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2463296,
+          41.3736665
+        ]
+      },
+      "id": "node/2269431831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2327281126",
+        "historic": "monument",
+        "int_name": "Pitu Guli",
+        "name": "Споменик на Питу Гули",
+        "name:en": "Statue of Pitu Guli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2497316,
+          41.3649692
+        ]
+      },
+      "id": "node/2327281126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2330629820",
+        "historic": "monument",
+        "inscription": "Наум Наумоски-Борче\n01.09.1920 - 28.09.1960",
+        "material": "bronze",
+        "memorial": "bust",
+        "name": "Наум Наумоски-Борче",
+        "name:en": "Naum Naumoski-Borche",
+        "name:mk": "Наум Наумоски-Борче"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2484409,
+          41.3653856
+        ]
+      },
+      "id": "node/2330629820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2360747213",
+        "historic": "monument",
+        "name": "Два Коња"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5001795,
+          41.1458586
+        ]
+      },
+      "id": "node/2360747213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2545342051",
+        "historic": "monument",
+        "name": "Преспанско Советување"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9119981,
+          40.9765203
+        ]
+      },
+      "id": "node/2545342051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2598104053",
+        "historic": "monument",
+        "name": "Карпалак"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5564074,
+          41.3475544
+        ]
+      },
+      "id": "node/2598104053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2759245083",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "int_name": "Saint Klement of Ohrid",
+        "name": "Свети Климент Охридски",
+        "name:en": "Monument St. Clement Ohridski",
+        "name:fr": "Saint Clément d’Ohrid",
+        "name:tr": "Aziz Kliment Anıtı",
+        "tourism": "artwork",
+        "wikidata": "Q158504",
+        "wikipedia": "mk:Свети Климент Охридски"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7995376,
+          41.1126936
+        ]
+      },
+      "id": "node/2759245083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2759253188",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "int_name": "Saints Cyril and Methodius",
+        "name": "Свети Кирил и Методиј",
+        "name:en": "Monuments of Saints Cyril and Methodius",
+        "name:fr": "Saints Cyrille et Méthode",
+        "name:mk": "Saints Cyril and Methodius",
+        "name:tr": "Aziz Kiril ve Aziz Metodius Anıtı",
+        "tourism": "artwork",
+        "wikidata": "Q239925",
+        "wikipedia": "mk:Св. Кирил и Методиј"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.799994,
+          41.1120476
+        ]
+      },
+      "id": "node/2759253188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2759263738",
+        "artwork_type": "statue",
+        "historic": "monument",
+        "int_name": "Saint Naum",
+        "name": "Свети Наум Охридски Чудотворец",
+        "name:en": "Monument to St. Naum of Ohrid",
+        "name:fr": "Saint Naum",
+        "name:tr": "Aziz Naum Anıtı",
+        "tourism": "artwork",
+        "wikidata": "Q350061",
+        "wikipedia": "mk:Свети Наум Охридски Чудотворец"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7990226,
+          41.1122955
+        ]
+      },
+      "id": "node/2759263738"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2851570672",
+        "historic": "monument",
+        "name": "Христо Узунов",
+        "wikidata": "Q3407165",
+        "wikipedia": "mk:Христо Узунов"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0770931,
+          41.4182291
+        ]
+      },
+      "id": "node/2851570672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3039854149",
+        "historic": "monument",
+        "name": "Споменик на жртви од НОВ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9636151,
+          41.9062629
+        ]
+      },
+      "id": "node/3039854149"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3409068903",
+        "historic": "monument",
+        "name": "Александар Македонски"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5524989,
+          41.3460556
+        ]
+      },
+      "id": "node/3409068903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3409068904",
+        "historic": "monument",
+        "name": "Методија Андонов-Ченто"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5528281,
+          41.3462544
+        ]
+      },
+      "id": "node/3409068904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3409074126",
+        "historic": "monument",
+        "name": "Св. Никола"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.553243,
+          41.3462194
+        ]
+      },
+      "id": "node/3409074126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3456913802",
+        "historic": "monument",
+        "name": "Карпалак 2001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5479723,
+          41.3434323
+        ]
+      },
+      "id": "node/3456913802"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3457966074",
+        "historic": "monument",
+        "name": "Крипта",
+        "name:en": "Cript"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.554646,
+          41.3341123
+        ]
+      },
+      "id": "node/3457966074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3642663981",
+        "historic": "monument",
+        "name": "Итар Пејо",
+        "name:en": "Sly Peter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5548417,
+          41.345456
+        ]
+      },
+      "id": "node/3642663981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3694881124",
+        "historic": "monument",
+        "name": "Dedo Jakim - Mill",
+        "name:mk": "Воденицата на Дедо Јаким"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8187714,
+          41.975162
+        ]
+      },
+      "id": "node/3694881124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3694922580",
+        "historic": "monument",
+        "name": "Ilin Kamen",
+        "name:mk": "Илин Камен"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.8193451,
+          41.9769054
+        ]
+      },
+      "id": "node/3694922580"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3695208787",
+        "historic": "monument",
+        "name": "Гоце Делчев (Биста)",
+        "name:en": "Goce Delchev"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7768724,
+          41.9668611
+        ]
+      },
+      "id": "node/3695208787"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3695208788",
+        "historic": "monument",
+        "name": "Гоце Делчев",
+        "name:en": "Goce Delchev"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7742882,
+          41.9643843
+        ]
+      },
+      "id": "node/3695208788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3695770497",
+        "historic": "monument",
+        "name": "Споменик на паднати борци во НОБ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7716387,
+          41.9653801
+        ]
+      },
+      "id": "node/3695770497"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3696656682",
+        "historic": "monument",
+        "name": "Кула",
+        "name:en": "Kula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7954411,
+          41.9425359
+        ]
+      },
+      "id": "node/3696656682"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3713662739",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "memorial": "statue",
+        "name": "Josip Broz Tito",
+        "subject:wikidata": "Q9161",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.426153,
+          41.9952169
+        ]
+      },
+      "id": "node/3713662739"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4078676807",
+        "historic": "monument",
+        "name": "Леонид Јанков"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5093733,
+          41.139367
+        ]
+      },
+      "id": "node/4078676807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4128156209",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "inscription": "Св. Кирил и Методиј",
+        "int_name": "Sv. Kiril i Metodi",
+        "memorial": "statue",
+        "name": "Св. Кирил и Методиј",
+        "name:de": "Kyrill und Method",
+        "name:en": "Saints Cyril and Methodius",
+        "subject:wikidata": "Q239925",
+        "subject:wikipedia": "mk:Св. Кирил и Методиј",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4339766,
+          41.9977079
+        ]
+      },
+      "id": "node/4128156209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4128156210",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "inscription": "Св. Климент Охридски и Наум Охридски Чудотворец",
+        "memorial": "statue",
+        "name": "Св. Климент Охридски и Наум Охридски Чудотворец",
+        "name:en": "Saints Clement of Ohrid and Naum",
+        "tourism": "artwork",
+        "wikipedia": "mk:Свети Климент Охридски;mk:Свети Наум Охридски Чудотворец"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4341509,
+          41.9975624
+        ]
+      },
+      "id": "node/4128156210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4149143991",
+        "addr:postcode": "1000",
+        "artist_name": "Димитар Филиповски",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "inscription": "Цар Самоил",
+        "memorial": "statue",
+        "name": "Цар Самоил",
+        "name:de": "Zar Samuil",
+        "name:en": "Tsar Samuel",
+        "start_date": "28.06.2011",
+        "tourism": "artwork",
+        "wikidata": "Q12910631",
+        "wikimedia_commons": "Category:Samuel's Monument (Skopje)",
+        "wikipedia": "mk:Споменик на Цар Самоил (Скопје)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4313414,
+          41.9953917
+        ]
+      },
+      "id": "node/4149143991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4161113452",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "inscription": "Даме Груев",
+        "memorial": "statue",
+        "name": "Даме Груев",
+        "name:de": "Dame Gruew",
+        "name:en": "Dame Gruev",
+        "name:fr": "Damé Grouev",
+        "name:mk": "Даме Груев",
+        "name:sr": "Даме Груев",
+        "subject:wikidata": "Q983917",
+        "subject:wikipedia": "mk:Даме Груев",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4321474,
+          41.9964949
+        ]
+      },
+      "id": "node/4161113452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4161113453",
+        "artist_name": "Роза Павлеска",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "inscription": "Јустинијан I",
+        "int_name": "Justinian I.",
+        "memorial": "statue",
+        "name": "Јустинијан I",
+        "name:de": "Justinian I.",
+        "name:en": "Justinian I",
+        "name:fr": "Justinien Ier",
+        "name:grc": "Ἰουστινιανός Α'",
+        "start_date": "16.06.2011",
+        "tourism": "artwork",
+        "wikidata": "Q12910626",
+        "wikimedia_commons": "Category:Monument of Iustinianus I (Skopje)",
+        "wikipedia": "mk:Споменик на Јустинијан I"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4323054,
+          41.9968799
+        ]
+      },
+      "id": "node/4161113453"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4161249330",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "inscription": "Олимпија",
+        "memorial": "statue",
+        "name": "Олимпија",
+        "name:de": "Olympias von Epirus",
+        "name:en": "Olympias",
+        "subject:wikidata": "Q223134",
+        "subject:wikipedia": "mk:Олимпија",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4344182,
+          41.9979046
+        ]
+      },
+      "id": "node/4161249330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4183631289",
+        "historic": "monument",
+        "name": "Прометеј",
+        "name:en": "Prometheus",
+        "name:tr": "Prometheus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4337226,
+          41.993303
+        ]
+      },
+      "id": "node/4183631289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4242928035",
+        "historic": "monument",
+        "name": "Тодор Александров"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.439106,
+          41.9834333
+        ]
+      },
+      "id": "node/4242928035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4266031693",
+        "historic": "monument",
+        "name": "Стара Рампа"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4369668,
+          41.986749
+        ]
+      },
+      "id": "node/4266031693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4271160712",
+        "historic": "monument",
+        "name": "Бегова кула",
+        "name:de": "Turm des Bey",
+        "name:en": "Bey's Tower",
+        "name:fr": "Tour du Bey",
+        "name:tr": "Bey kulesi",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4317487,
+          41.9936684
+        ]
+      },
+      "id": "node/4271160712"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4278022934",
+        "historic": "monument",
+        "name": "Гоце Делчев"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7549207,
+          41.4166941
+        ]
+      },
+      "id": "node/4278022934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4351691820",
+        "historic": "memorial",
+        "memorial": "statue",
+        "name": "Свети Наум",
+        "name:mk": "Свети Наум",
+        "name:ru": "Святой Наум",
+        "name:sq": "Shën Naumi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7412554,
+          40.9142149
+        ]
+      },
+      "id": "node/4351691820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4357166289",
+        "historic": "monument",
+        "name": "Споменик на загинатите евреи"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1903758,
+          41.736405
+        ]
+      },
+      "id": "node/4357166289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4365876494",
+        "historic": "monument",
+        "int_name": "Murat Paşa Camii",
+        "name": "Мустафа-пашина џамија",
+        "name:en": "Murat Pasha Mosque",
+        "name:tr": "Murat Paşa Camii"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4375046,
+          42.000853
+        ]
+      },
+      "id": "node/4365876494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4380846206",
+        "historic": "monument",
+        "name": "Споменик на Јуриј Гагарин",
+        "name:en": "Yuri Gagarin Monument"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4108745,
+          41.9949279
+        ]
+      },
+      "id": "node/4380846206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4386764089",
+        "historic": "monument",
+        "name": "Никола Карев"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4332009,
+          41.9930188
+        ]
+      },
+      "id": "node/4386764089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4477202789",
+        "historic": "monument",
+        "name": "Вера Јоциќ",
+        "name:en": "Vera Jocik",
+        "name:mk": "Вера Јоциќ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4283664,
+          42.0016804
+        ]
+      },
+      "id": "node/4477202789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4575831104",
+        "access": "yes",
+        "historic": "monument",
+        "monument": "statue",
+        "name": "Марко Мрњавчевиќ",
+        "name:en": "Marko Mrnjavchevikj",
+        "name:mk": "Марко Мрњавчевиќ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5532375,
+          41.3455416
+        ]
+      },
+      "id": "node/4575831104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4575841428",
+        "historic": "monument",
+        "name": "Круме Кепески"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5505634,
+          41.3450704
+        ]
+      },
+      "id": "node/4575841428"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4575841429",
+        "historic": "monument",
+        "name": "Блаже Конески"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5506707,
+          41.3451329
+        ]
+      },
+      "id": "node/4575841429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4575841430",
+        "historic": "monument",
+        "name": "Марко Цепенков"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5505581,
+          41.3451792
+        ]
+      },
+      "id": "node/4575841430"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4751492691",
+        "artist:wikidata": "Q1090724",
+        "historic": "monument",
+        "name": "Споменик на слободата",
+        "name:en": "Monument of freedom",
+        "ruins": "yes",
+        "start_date": "1969"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.5006786,
+          41.158263
+        ]
+      },
+      "id": "node/4751492691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4907386415",
+        "historic": "monument",
+        "name": "Борецот"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.5025867,
+          41.3738524
+        ]
+      },
+      "id": "node/4907386415"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4972835907",
+        "historic": "monument",
+        "name": "Сергеј Есенин"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.6783749,
+          41.1736526
+        ]
+      },
+      "id": "node/4972835907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5055432425",
+        "historic": "monument",
+        "int_name": "Emin-beg Kula",
+        "name": "Емин-бегова кула",
+        "name:en": "Emin Bey Tower",
+        "tourism": "attraction"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1823517,
+          42.0769461
+        ]
+      },
+      "id": "node/5055432425"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5055432426",
+        "historic": "monument",
+        "int_name": "Ksteva Kula",
+        "name": "Крстева кула",
+        "name:en": "Krste's Tower",
+        "name:mk": "Крстева кула"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1826261,
+          42.0768838
+        ]
+      },
+      "id": "node/5055432426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5055444424",
+        "historic": "monument",
+        "name": "Споменик „Солунски фронт“ од I светска војна",
+        "name:en": "World War I Salonica Front memorial",
+        "name:nl": "World War I Salonica Front monument"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.6878453,
+          41.1949939
+        ]
+      },
+      "id": "node/5055444424"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5055444426",
+        "historic": "monument",
+        "int_name": "Hadži Kostova Kula",
+        "name": "Хаџикостова кула",
+        "name:en": "Hadji Kostov Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1822635,
+          42.0768628
+        ]
+      },
+      "id": "node/5055444426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5055455123",
+        "historic": "monument",
+        "int_name": "Saat Kula",
+        "name": "Саат-кула",
+        "name:en": "Clock Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1818109,
+          42.0792053
+        ]
+      },
+      "id": "node/5055455123"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5055455125",
+        "historic": "monument",
+        "int_name": "Zlatkovičeva Kula",
+        "name": "Златковичева кула",
+        "name:en": "Zlatkovich Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1809805,
+          42.0788289
+        ]
+      },
+      "id": "node/5055455125"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5055455126",
+        "historic": "monument",
+        "int_name": "Simiḱeva Kula",
+        "name": "Симиќева кула",
+        "name:en": "Simikj Tower"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1794714,
+          42.0786957
+        ]
+      },
+      "id": "node/5055455126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5098505521",
+        "historic": "monument",
+        "name": "Струмица-Кристал-64"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.6796979,
+          41.4409796
+        ]
+      },
+      "id": "node/5098505521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5711419372",
+        "artwork_type": "statue",
+        "historic": "memorial",
+        "memorial": "statue",
+        "name": "Гоце Делчев",
+        "name:de": "Goze Deltschew",
+        "name:en": "Goce Delchev",
+        "name:fr": "Gotsé Deltchev",
+        "name:mk": "Гоце Делчев",
+        "name:sr": "Гоце Делчев",
+        "tourism": "artwork"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4323793,
+          41.9963577
+        ]
+      },
+      "id": "node/5711419372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5812672954",
+        "historic": "monument",
+        "name": "Doma",
+        "name:tr": "Evim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4434502,
+          42.0169571
+        ]
+      },
+      "id": "node/5812672954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6054048485",
+        "historic": "memorial",
+        "int_name": "Metodija Andonov - Čento Momument",
+        "memorial": "statue",
+        "name": "Методија Андонов - Ченто"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4306041,
+          41.9957136
+        ]
+      },
+      "id": "node/6054048485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6136130985",
+        "historic": "monument",
+        "name": "terminal mitnitsa tetovo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9681527,
+          41.9974433
+        ]
+      },
+      "id": "node/6136130985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6136130988",
+        "historic": "monument",
+        "name": "patarina-160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2926787,
+          41.9885405
+        ]
+      },
+      "id": "node/6136130988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6337100523",
+        "historic": "monument",
+        "name": "Kanda - Geoglif Sv. Nikole",
+        "website": "https://www.ancient-origins.net/news-history-archaeology/astronomical-alignment-geoglyph-republic-macedonia-020170"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.9562049,
+          41.8289715
+        ]
+      },
+      "id": "node/6337100523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6563726510",
+        "historic": "monument",
+        "inscription": "WWII",
+        "name": "Mirče Acev Bataljon",
+        "website": "https://en.m.wikipedia.org/wiki/People%27s_Liberation_Army_of_Macedonia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7630424,
+          41.3747079
+        ]
+      },
+      "id": "node/6563726510"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6901630767",
+        "historic": "monument",
+        "name": "Љубе Грујоски",
+        "name:en": "Ljube Grujoski",
+        "wikidata": "Q20562690"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.3684104,
+          41.2754595
+        ]
+      },
+      "id": "node/6901630767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7124138432",
+        "access": "yes",
+        "historic": "monument",
+        "name": "Споменик на Дојрана"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7227512,
+          41.1857198
+        ]
+      },
+      "id": "node/7124138432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7124138466",
+        "access": "yes",
+        "historic": "monument",
+        "name": "Чешма Света Петка"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7233826,
+          41.1825947
+        ]
+      },
+      "id": "node/7124138466"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7504362426",
+        "access": "yes",
+        "historic": "monument",
+        "inscription": "1868-1904",
+        "name": "Толе Паша",
+        "name:en": "Tole Pasha",
+        "tomb": "war_grave",
+        "wikipedia": "mk:Толе_Паша"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6536957,
+          41.2064953
+        ]
+      },
+      "id": "node/7504362426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7796229745",
+        "historic": "monument",
+        "name": "Гоце Делчев"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9229426,
+          41.4831122
+        ]
+      },
+      "id": "node/7796229745"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7796229746",
+        "historic": "monument",
+        "name": "Христо Узунов",
+        "name:en": "Hristo Uzunov"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9222623,
+          41.483575
+        ]
+      },
+      "id": "node/7796229746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7833094677",
+        "historic": "monument",
+        "name": "Споменик Св. Никола",
+        "name:en": "Monument of St. Nicholas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.942062,
+          41.8646892
+        ]
+      },
+      "id": "node/7833094677"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7833095397",
+        "historic": "monument",
+        "name": "Споменик „Лазар Колишевски“"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.9410121,
+          41.8644645
+        ]
+      },
+      "id": "node/7833095397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7947878810",
+        "access": "yes",
+        "historic": "monument",
+        "name": "Споменик на Никола Карев",
+        "name:en": "Monument to Nikola Karev"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.412778,
+          41.9156602
+        ]
+      },
+      "id": "node/7947878810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8279921462",
+        "historic": "monument",
+        "name": "Кица Петрески",
+        "name:en": "Kica Petreski"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2488407,
+          41.3653786
+        ]
+      },
+      "id": "node/8279921462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8402562316",
+        "historic": "monument",
+        "name": "VAM-304"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6650899,
+          41.8668125
+        ]
+      },
+      "id": "node/8402562316"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8402601134",
+        "historic": "monument",
+        "name": "МАР-7712"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.6491133,
+          41.4498577
+        ]
+      },
+      "id": "node/8402601134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8433354043",
+        "access": "yes",
+        "historic": "monument",
+        "name": "Ослободителите на Скопје",
+        "name:en": "Monument to the Liberators of Skopje"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4292436,
+          41.9998632
+        ]
+      },
+      "id": "node/8433354043"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8677386085",
+        "historic": "monument",
+        "name": "Вејце"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9185104,
+          42.0673767
+        ]
+      },
+      "id": "node/8677386085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8880547039",
+        "historic": "monument",
+        "name": "Генерал Михаило Апостолски"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4485415,
+          41.9998618
+        ]
+      },
+      "id": "node/8880547039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8883349543",
+        "historic": "memorial",
+        "int_name": "General Mihajlo Apostolski",
+        "memorial": "statue",
+        "name": "Генерал Михајло Апостолски",
+        "name:mk": "Генерал Михајло Апостолски"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4506665,
+          41.9988251
+        ]
+      },
+      "id": "node/8883349543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8883349544",
+        "historic": "monument",
+        "name": "Krste Petkov Misirkov",
+        "name:mk": "Крсте Петков Мисирков"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4412009,
+          41.9960184
+        ]
+      },
+      "id": "node/8883349544"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8883349545",
+        "historic": "monument",
+        "name": "Blaže Koneski",
+        "name:mk": "Блаже Конески"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4408764,
+          41.9960802
+        ]
+      },
+      "id": "node/8883349545"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8951219184",
+        "access": "yes",
+        "historic": "monument",
+        "name": "Фаќач на чесниот крст",
+        "name:mk": "Фаќач на чесниот крст"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.799333,
+          41.1119818
+        ]
+      },
+      "id": "node/8951219184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9026624343",
+        "historic": "monument",
+        "name": "Павел Шатев",
+        "name:en": "Pavel Šatev"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4326511,
+          41.9945304
+        ]
+      },
+      "id": "node/9026624343"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9078062189",
+        "historic": "memorial",
+        "inscription": "Невена Николова Георгиева-Дуња (25 јули 1925 во Скопје — 16 декември 1942 во Нежилово) — македонска комунистка, припадничка на младинското, синдикалното и работничкото движење меѓу двете светски војни, учесник во НОВ од 1941 година. Со своите 16 години би",
+        "memorial": "statue",
+        "name": "Невена Георгиева-Дуња"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4332709,
+          41.993726
+        ]
+      },
+      "id": "node/9078062189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9080920713",
+        "historic": "monument",
+        "name": "Ѓоко Лазаревски",
+        "name:en": "Gjoko Lazarevski"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0288552,
+          42.0640097
+        ]
+      },
+      "id": "node/9080920713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9086030879",
+        "historic": "monument",
+        "monument": "war_memorial",
+        "name": "Загинати Лешочани во војните 1903-2001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0285176,
+          42.0668701
+        ]
+      },
+      "id": "node/9086030879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9661472617",
+        "historic": "monument",
+        "name": "Браќата Просветители Св. Кирил и Методиј"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4105061,
+          41.9135927
+        ]
+      },
+      "id": "node/9661472617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9661483288",
+        "historic": "monument",
+        "name": "Љупчо Сантов"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.410612,
+          41.9143473
+        ]
+      },
+      "id": "node/9661483288"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9927093810",
+        "historic": "monument",
+        "name": "Naim Frasheri"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.8876605,
+          41.8781835
+        ]
+      },
+      "id": "node/9927093810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9927105104",
+        "access": "yes",
+        "historic": "monument",
+        "name": "Naser Ademi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.8835051,
+          41.878351
+        ]
+      },
+      "id": "node/9927105104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9927105105",
+        "access": "yes",
+        "historic": "monument",
+        "name": "Deshmoret e Ushtrise Clirimtare Kombetare"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.883467,
+          41.8782156
+        ]
+      },
+      "id": "node/9927105105"
+    }
+  ]
+}
