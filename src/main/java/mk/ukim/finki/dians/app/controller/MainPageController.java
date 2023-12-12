@@ -6,9 +6,7 @@ import mk.ukim.finki.dians.app.service.HeritageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -43,4 +41,40 @@ public class MainPageController {
         return "mainPage";
     }
 
+    @GetMapping("/edit-form/{id}")
+    public String editMoviePage(@PathVariable Long id, Model model) {
+        if (this.heritageService.findById(id).isPresent()) {
+            Heritage heritage = this.heritageService.findById(id).get();
+            List<String> cities = heritageService.findAllCities();
+            List<String> categories = heritageService.findAllCategories();
+            model.addAttribute("cities", cities);
+            model.addAttribute("categories", categories);
+            model.addAttribute("heritage", heritage);
+            return "heritageForm";
+        }
+        return "redirect:/mainPage";
+    }
+
+    @GetMapping("/add-heritage")
+    public String addHeritage(Model model){
+        List<String> cities = heritageService.findAllCities();
+        List<String> categories = heritageService.findAllCategories();
+        model.addAttribute("cities", cities);
+        model.addAttribute("categories", categories);
+        return "heritageForm";
+    }
+
+    @PostMapping("/save")
+    public String saveHeritage(
+            @RequestParam(required = false) Long id,
+            @RequestParam String name,
+            @RequestParam String city){
+
+        if(id==null){
+            heritageService.save(name, city, "Споменик/Градба", 42.0191255, 20.9616728);
+        }else{
+            heritageService.update(id, name, city, "Споменик/Градба", 42.0191255, 20.9616728);
+        }
+        return "redirect:/mainPage";
+    }
 }

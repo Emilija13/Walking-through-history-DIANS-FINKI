@@ -1,5 +1,6 @@
 package mk.ukim.finki.dians.app.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import jakarta.persistence.*;
@@ -7,11 +8,13 @@ import jakarta.persistence.*;
 
 @Data
 @Entity
+@AllArgsConstructor
 @Table(name="heritage")
 public class Heritage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    @Column(name="id")
+    private Long id;
     //private String ID;
     private String name;
     private String city;
@@ -29,4 +32,6 @@ public class Heritage {
         this.lat = lat;
         this.lon = lon;
     }
+
+
 }
