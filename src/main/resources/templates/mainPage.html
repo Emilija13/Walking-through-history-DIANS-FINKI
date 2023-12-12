@@ -15,6 +15,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
 </head>
 
 <body>
@@ -111,9 +114,56 @@
             <!--STRANICEN PREGLED LEVO-->
 
             <!--STRANICEN PREGLED DESNO-->
-            <div class="col-lg-8 vh-100 ">
+            <!--<div class="col-lg-8 vh-100 ">
                 <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079020.378421984!2d19.59560369594852!3d41.093996354619506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354159f70bc4809%3A0xe0f25ad6c81fc5b1!2sNorth%20Macedonia!5e0!3m2!1sen!2smk!4v1701444153896!5m2!1sen!2smk"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>!-->
+
+            <div class="col-lg-8 vh-100 ">
+                <div id="map" class="w-100 h-100"></div>
             </div>
+
+            <script th:inline="javascript">
+                /*<![CDATA[*/
+                let heritageData = /*[[${heritages}]]*/ [];
+                /*]]>*/
+            </script>
+
+            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+            <script th:inline="javascript">
+                let mapOptions = {
+                    center: [41.628, 21.742],
+                    zoom: 8
+                }
+
+                let map = new L.map('map', mapOptions);
+                let layer = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+                map.addLayer(layer);
+
+                // Iterate over the heritage data and add markers to the map
+                heritageData.forEach(function(heritage) {
+                    let marker = L.marker([heritage.lat, heritage.lon]).addTo(map)
+                        .bindPopup(`
+                        <div>
+                            <p><strong>Name:</strong> ${heritage.name}</p>
+                            <p><strong>City:</strong> ${heritage.city}</p>
+                            <p><strong>Type:</strong> ${heritage.category}</p>
+                        </div>
+                        `);
+                    marker.on('mouseover', function (e) {
+                        this.openPopup();
+                    });
+
+                    // Hide popup on marker mouseout
+                    marker.on('mouseout', function (e) {
+                        this.closePopup();
+                    });
+
+                    // Zoom in on marker click
+                    marker.on('click', function (e) {
+                        map.setView([heritage.lat, heritage.lon], 13); // Set the desired zoom level
+                    });
+                });
+            </script>
             <!--STRANICEN PREGLED DESNO-->
 
         </div>
