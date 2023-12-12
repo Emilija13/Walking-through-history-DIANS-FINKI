@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Historical legacies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!--NAVIGATION BAR-->
+<nav class="navbar" style="background-color: #b3dcfa;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-2 pb-2">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span><!--slika-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active h2 px-3" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h2 px-3" href="/mainPage">Historical legacies</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--tuka home-->
+                        <a class="nav-link h2 px-3" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--tuka home-->
+                        <a class="nav-link h2 px-3" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</nav>
+<!--NAVIGATION BAR-->
+
+
+
+<section class="">
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--STRANICEN PREGLED LEVO-->
+            <div class="col-lg-4 vh-100" style="background-color: #e3f2fd;">
+                <!--SEARCH BAR-->
+                <form th:method="get" th:action="@{/mainPage/search}">
+                    <div class="container"><!--label i kopche-->
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="pt-4 pb-4 pl-3"><h1 style="color: #084672">Find a location</h1></div>
+                            </div>
+                            <div class="col-md-4 mt-5 ">
+                                <div class="pt-1 pb-1 pl-3">
+                                    <input class="btn btn-primary btn-lg rounded-pill pt-1 pb-1" type="submit" value="Search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pb-1 mr-3 ml-3">
+                        <input type="text" name="name" th:value="${search}" placeholder="Search name" class="w-100 pl-3 pr-3 pt-1 pb-1">
+                    </div>
+
+                    <div class="pt-1 pb-1 mr-3 ml-3">
+                        <select th:name="city" class="w-100 pt-1 pb-1 pl-3 pr-3 ">
+                            <option value="">Select a City</option>
+                            <option th:each="city : ${cities}" th:value="${city}" th:text="${city}"></option>
+                        </select>
+                    </div>
+
+                    <div class="pt-1 pb-1 mr-3 ml-3">
+                        <select th:name="category" class="w-100 pt-1 pb-1 pl-3 pr-3 ">
+                            <option value="">Select a Category</option>
+                            <option th:each="category : ${categories}" th:value="${category}" th:text="${category}"></option>
+                        </select>
+                    </div>
+                </form>
+                <!--SEARCH BAR-->
+
+                <!--PRIKAZ NA REZULTATI-->
+                <div th:if="${heritages != null and heritages.size() > 0}" class="mt-3">
+                   <div class=" overflow-auto" style=" max-height: 400px; overflow-y: auto;">
+                        <table>
+                            <tr th:each="heritage : ${heritages}">
+                                <div class="border border-secondary rounded mb-1"  style="background-color: #cbe7fb; color: #084672;">
+                                    <span  class="pl-5 pt-2 pb-1 h3 d-block" th:text="${heritage.getName()}"></span>
+                                    <span  class="pl-5  pb-1 h5 d-block" th:text="${heritage.getCity()}"></span>
+                                    <span  class="pl-5  pb-2 d-block" th:text="${heritage.getCategory()}"></span>
+                                </div>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--PRIKAZ NA REZULTATI-->
+
+            </div>
+            <!--STRANICEN PREGLED LEVO-->
+
+            <!--STRANICEN PREGLED DESNO-->
+            <div class="col-lg-8 vh-100 ">
+                <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079020.378421984!2d19.59560369594852!3d41.093996354619506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354159f70bc4809%3A0xe0f25ad6c81fc5b1!2sNorth%20Macedonia!5e0!3m2!1sen!2smk!4v1701444153896!5m2!1sen!2smk"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!--STRANICEN PREGLED DESNO-->
+
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
