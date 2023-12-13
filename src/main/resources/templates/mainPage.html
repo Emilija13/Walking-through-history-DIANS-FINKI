@@ -95,11 +95,14 @@
                 <!--SEARCH BAR-->
 
                 <!--PRIKAZ NA REZULTATI-->
+                <form th:method="post" th:action="@{/mainPage/deleteHeritages}" method="post">
+
                 <div th:if="${heritages != null and heritages.size() > 0}" class="mt-3">
                    <div class=" overflow-auto" style=" max-height: 400px; overflow-y: auto;">
                         <table>
                             <tr th:each="heritage : ${heritages}">
-                                <div class="border border-secondary rounded mb-1"  style="background-color: #cbe7fb; color: #084672;">
+                                <div class="border border-secondary rounded mb-1"  th:id="${heritage.getId()}" style="background-color: #cbe7fb; color: #084672;">
+                                    <input  class="ml-3 mr-2" type="checkbox" name="heritageIds" th:value="${heritage.getId()}">
                                     <span  class="pl-5 pt-2 pb-1 h3 d-block" th:text="${heritage.getName()}"></span>
                                     <span  class="pl-5  pb-1 h5 d-block" th:text="${heritage.getCity()}"></span>
                                     <span  class="pl-5  pb-2 d-block" th:text="${heritage.getCategory()}"></span>
@@ -108,6 +111,12 @@
                         </table>
                     </div>
                 </div>
+                    <input type="submit" name="submit" id="submit">
+                </form>
+
+                <!-- Add a delete button outside the loop -->
+
+
                 <!--PRIKAZ NA REZULTATI-->
 
             </div>

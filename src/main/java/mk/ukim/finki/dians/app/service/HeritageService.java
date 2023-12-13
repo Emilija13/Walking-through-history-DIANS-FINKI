@@ -47,5 +47,10 @@ public class HeritageService {
     public List<Heritage> search(String name, String city, String category) {
        return heritageRepository.search(name, city, category);
     }
+    public void deleteHeritages(List<Long> heritageIds) {
+        for (Long heritageId : heritageIds) {
+            heritageRepository.deleteById(heritageId);
+        }
+    }
 
 }

@@ -7,12 +7,11 @@ import jakarta.persistence.*;
 
 @Data
 @Entity
-@Table(name="heritage")
+@Table(name="heritage2")
 public class Heritage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
-    //private String ID;
+    private Long id;
     private String name;
     private String city;
     private String category;
@@ -22,7 +21,6 @@ public class Heritage {
     public Heritage(){}
 
     public Heritage( String name, String city, String category, Double lat, Double lon) {
-        //this.ID = id;
         this.name = name;
         this.city = city;
         this.category = category;

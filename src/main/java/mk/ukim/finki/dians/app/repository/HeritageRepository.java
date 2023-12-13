@@ -24,4 +24,5 @@ public interface HeritageRepository extends JpaRepository<Heritage, Long> {
 
     @Query("SELECT DISTINCT h.category FROM Heritage h")
     List<String> findAllCategories();
+    void deleteById(Long id);
 }
