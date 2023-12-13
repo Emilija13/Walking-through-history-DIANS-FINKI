@@ -109,10 +109,11 @@
                         <table>
                             <tr th:each="heritage : ${heritages}">
                                 <div class="border border-secondary rounded mb-1"  th:id="${heritage.getId()}" style="background-color: #cbe7fb; color: #084672;">
-                                    <input  class="ml-3 mr-2" type="checkbox" name="heritageIds" th:value="${heritage.getId()}">
+                                    <input  class="ml-3 mt-3" type="checkbox" name="heritageIds" th:value="${heritage.getId()}">
                                     <span  class="pl-5 pt-2 pb-1 h3 d-block" th:text="${heritage.getName()}"></span>
                                     <span  class="pl-5  pb-1 h5 d-block" th:text="${heritage.getCity()}"></span>
                                     <span  class="pl-5  pb-2 d-block" th:text="${heritage.getCategory()}"></span>
+                                    <a th:href="@{/mainPage/edit-form/{id}(id=${heritage.getId()})}">Edit</a>
                                 </div>
                             </tr>
                         </table>

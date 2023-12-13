@@ -9,7 +9,7 @@ import jakarta.persistence.*;
 @Data
 @Entity
 @AllArgsConstructor
-@Table(name="heritage2")
+@Table(name="heritage")
 public class Heritage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
