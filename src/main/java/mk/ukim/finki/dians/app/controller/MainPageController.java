@@ -77,4 +77,11 @@ public class MainPageController {
         }
         return "redirect:/mainPage";
     }
+    @PostMapping("/deleteHeritages")
+    public String deleteHeritages(@RequestParam(name = "heritageIds", required = false) List<Long> heritageIds) {
+        if (heritageIds != null) {
+            heritageService.deleteHeritages(heritageIds);
+        }
+        return "redirect:/mainPage";
+    }
 }
