@@ -31,10 +31,10 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active h2 px-3" aria-current="page" href="/home">Home</a>
+                        <a class="nav-link h2 px-3" aria-current="page" href="/home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link h2 px-3" href="/mainPage">Historical legacies</a>
+                        <a class="nav-link active h2 px-3" href="/mainPage">Historical legacies</a>
                     </li>
                     <li class="nav-item">
                         <!--tuka home-->
@@ -93,6 +93,14 @@
                     </div>
                 </form>
                 <!--SEARCH BAR-->
+
+
+                <div>
+                    <a th:href="@{/mainPage/add-heritage}" class="btn btn-sm btn-success ">
+                        <i class="fa fa-plus">Add new heritage</i>
+                    </a>
+                </div>
+
 
                 <!--PRIKAZ NA REZULTATI-->
                 <form th:method="post" th:action="@{/mainPage/deleteHeritages}" method="post">

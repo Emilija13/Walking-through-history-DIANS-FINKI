@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class HeritageService {
@@ -42,6 +43,18 @@ public class HeritageService {
     }
     public List<String> findAllCategories() {
         return heritageRepository.findAllCategories();
+    }
+    public Optional<Heritage> findById(Long id){return heritageRepository.findById(id);}
+    public void save(String name, String city, String category, Double lat, Double lon){
+        Heritage heritage = new Heritage(name, city, category, lat, lon);
+        heritageRepository.save(heritage);
+    }
+
+    public void update(Long id, String name, String city, String category, Double lat, Double lon){
+        if(heritageRepository.findById(id).isPresent()){
+            Heritage heritage = new Heritage(id, name, city, category, lat, lon);
+            heritageRepository.save(heritage);
+        }
     }
 
     public List<Heritage> search(String name, String city, String category) {

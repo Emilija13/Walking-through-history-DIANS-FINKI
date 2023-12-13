@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface HeritageRepository extends JpaRepository<Heritage, Long> {
@@ -18,6 +19,8 @@ public interface HeritageRepository extends JpaRepository<Heritage, Long> {
             String city,
             String category
     );
+
+    Optional<Heritage> findById(Long id);
 
     @Query("SELECT DISTINCT h.city FROM Heritage h")
     List<String> findAllCities();

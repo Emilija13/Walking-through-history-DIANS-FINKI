@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Historical legacies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/pageStyle.css">
+</head>
+<body>
+<!--NAVIGATION BAR-->
+<nav class="navbar" style="background-color: #b3dcfa;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-2 pb-2">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span><!--slika-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active h2 px-3" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h2 px-3" href="/mainPage">Historical legacies</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--tuka home-->
+                        <a class="nav-link h2 px-3" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--tuka home-->
+                        <a class="nav-link h2 px-3" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</nav>
+<!--NAVIGATION BAR-->
+
+<div class="container" id="h-form">
+    <div class="row">
+        <div class="col-md-6">
+            <form th:action="@{/mainPage/save}" th:method="POST">
+                <input id="id" type="hidden" name="id"
+                       th:value="(${heritage} != null ? ${heritage.getId()} : '')">
+                <div class="form-group">
+                    <label for="name">Име</label>
+                    <input type="text"
+                           class="form-control"
+                           id="name"
+                           name="name"
+                           th:value="(${heritage} != null ? ${heritage.getName()} : '')"
+                           required
+                           placeholder="Enter heritage name">
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Град</label>
+                        <select id="city" name="city" class="form-control">
+                            <option th:if="${heritage} != null"
+                                    th:selected="${heritage.getCity() != null &&
+                                    heritage.getCity() == cityy}"
+                                    th:each="cityy : ${cities}"
+                                    th:value="${cityy}"
+                                    th:text="${cityy}">
+                            </option>
+                            <option th:if="${heritage} == null"
+                                    th:each="cityy : ${cities}"
+                                    th:value="${cityy}"
+                                    th:text="${cityy}">
+                            </option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Категорија</label>
+                        <select id="category" name="city" class="form-control">
+                            <option th:if="${heritage} != null"
+                                    th:selected="${heritage.getCategory() != null &&
+                                    heritage.getCategory() == categoryy}"
+                                    th:each="categoryy : ${categories}"
+                                    th:value="${categoryy}"
+                                    th:text="${categoryy}">
+                            </option>
+                            <option th:if="${heritage} == null"
+                                    th:each="categoryy : ${categories}"
+                                    th:value="${categoryy}"
+                                    th:text="${categoryy}">
+                            </option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="lat">Географска ширина (Latitude)</label>
+                    <input type="number"
+                           class="form-control"
+                           id="lat"
+                           name="lat"
+                           th:value="(${heritage} != null ? ${heritage.getLat()} : '')"
+                           required
+                           min="40.85305"
+                           max="42.373611"
+                           step="0.000001">
+                </div>
+
+                <div class="form-group">
+                    <label for="lon">Географска должина (Latitude)</label>
+                    <input type="number"
+                           class="form-control"
+                           id="lon"
+                           name="lon"
+                           th:value="(${heritage} != null ? ${heritage.getLon()} : '')"
+                           required
+                           min="20.463611"
+                           max="23.005278"
+                           step="0.000001">
+                </div>
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                <a type="button" class="btn btn-primary" href="/mainPage">Back</a>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
