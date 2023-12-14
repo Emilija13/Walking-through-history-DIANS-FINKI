@@ -68,12 +68,15 @@ public class MainPageController {
     public String saveHeritage(
             @RequestParam(required = false) Long id,
             @RequestParam String name,
-            @RequestParam String city){
+            @RequestParam String city,
+            @RequestParam String category,
+            @RequestParam Double lat,
+            @RequestParam Double lon){
 
         if(id==null){
-            heritageService.save(name, city, "Споменик/Градба", 42.0191255, 20.9616728);
+            heritageService.save(name, city, category, lat, lon);
         }else{
-            heritageService.update(id, name, city, "Споменик/Градба", 42.0191255, 20.9616728);
+            heritageService.update(id, name, city, category, lat, lon);
         }
         return "redirect:/mainPage";
     }
