@@ -118,8 +118,9 @@
                             <table>
                                 <tr th:each="heritage : ${heritages}">
                                     <!--<input  class="ml-3 mt-3 del-checkbox" type="checkbox" name="heritageIds" th:value="${heritage.getId()}">!-->
-                                    <div class="heritage-item mb-1" style="height: 175px">
-                                        <a><input  class="ml-2 mt-2 del-checkbox" type="checkbox" name="heritageIds" th:value="${heritage.getId()}"></a>
+                                    <div class="heritage-item mb-1" style="height: 175px" onmouseover="showCheckbox(this)" onmouseout="hideCheckbox(this)">
+                                        <a><input  class="ml-2 mt-2 del-checkbox" type="checkbox" name="heritageIds" th:value="${heritage.getId()}"
+                                        onchange="toggleVisibility(this)" onmouseover="showCheckbox(this.closest('.heritage-item'))"></a>
                                         <a class="edit-link" th:href="@{/mainPage/edit-form/{id}(id=${heritage.getId()})}">Измени</a>
                                     <a href="#" class="heritage-item-link" style="text-decoration: none; color: inherit;"
                                        th:data-lat="${heritage.getLat()}" th:data-lon="${heritage.getLon()}"
@@ -135,6 +136,36 @@
                         </div>
                     </div>
                 </form>
+
+                <script>
+                    function showCheckbox(element) {
+                        // Find the checkbox within the heritage-item and set visibility to 'visible'
+                        let checkbox = element.querySelector('.del-checkbox');
+                        checkbox.style.visibility = 'visible';
+                    }
+
+                    function hideCheckbox(element) {
+                        // Find all checkboxes within the heritage-items
+                        let checkboxes = document.querySelectorAll('.del-checkbox');
+
+                        // Check if at least one checkbox is checked
+                        let atLeastOneChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+
+                        // Set visibility for all checkboxes based on whether at least one is checked
+                        checkboxes.forEach(checkbox => {
+                            checkbox.style.visibility = atLeastOneChecked ? 'visible' : 'hidden';
+                        });
+                    }
+
+                    function toggleVisibility(element) {
+                        // Check if the checkbox is checked and call the appropriate method
+                        if (element.checked) {
+                            showCheckbox(element.closest('.heritage-item'));
+                        } else {
+                            hideCheckbox(element.closest('.heritage-item'));
+                        }
+                    }
+                </script>
 
 
                 <!-- Add a delete button outside the loop -->

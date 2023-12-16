@@ -34,7 +34,9 @@ public class MainPageController {
     }
 
     @GetMapping("/search")
-    public String searchHeritage(@RequestParam(name = "name", required = false) String name,@RequestParam(name = "city", required = false) String city,@RequestParam(name = "category", required = false) String category, Model model) {
+    public String searchHeritage(@RequestParam(name = "name", required = false) String name,
+                                 @RequestParam(name = "city", required = false) String city,
+                                 @RequestParam(name = "category", required = false) String category, Model model) {
         model.addAttribute("cities",heritageService.findAllCities());
         model.addAttribute("categories",heritageService.findAllCategories());
         model.addAttribute("heritages", heritageService.search(name,city,category));
