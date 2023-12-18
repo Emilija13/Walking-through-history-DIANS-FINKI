@@ -17,10 +17,78 @@
             crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/static/pageStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    body {
+        background-color: transparent;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 1s ease-in-out;
+        z-index: -1;
+        filter: grayscale(100%);
+    }
+    .background-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 1s ease-in-out;
+        z-index: -1;
+    }
+    .text-on-background {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+    }
 
 
-<body style="background-color:#e3f2fd">
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var imageUrls = [
+            "https://skopskoeho.mk/wp-content/uploads/2019/04/skopsko-kale-2.jpg",
+            "https://macedonia-timeless.com/wp-content/uploads/2018/09/zaliv-na-koskite.jpg",
+            "https://www.bhfieldschool.org/uploaded/gallery/10_Synagogue%20Basilica_5716_2019_1-11293.jpg",
+            "https://macedonia-timeless.com/wp-content/uploads/2018/09/sveti-naum-ohridski.jpg"
+        ];
+
+        var index = 0;
+
+        function changeBackground() {
+            document.getElementById("background-container").style.backgroundImage = "url('" + imageUrls[index] + "')";
+            index = (index + 1) % imageUrls.length;
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000);
+    });
+
+
+</script>
+
+<body  style="background-color:#e3f2fd">
+<div class="background-container" id="background-container"></div>
 <!--NAVIGATION BAR-->
 <nav class="navbar">
     <div class="image-container">
@@ -58,7 +126,8 @@
 
 <!--<h1>About</h1>-->
 
-<section id="introduction">
+
+<section id="introduction" class="text-on-background">
     <div class="container">
         </br>
         </br>
@@ -72,22 +141,22 @@
         </p>
     </div>
 </section>
-</br>
 
-<section id="historicalSites">
+
+<section id="historicalSites" class="text-on-background">
     <div class="container w-60" >
-        <h2 class="text-center h4"  style="color: #084672">Мисија</h2>
-        <p  class="text-center" style="color: #007BFF">
+        <h2 class="text-center h4"  style="color:  #084672">Мисија</h2>
+        <p  class="text-center" style="color: #084672">
             Нашата Мисија е со помош на технологијата да го промовираме нашето наследство и да им овозможиме на корисниците
             на лесен начин да пристапат до локациите на сите културно-историски објекти во Македонија и да можат да ги посетат.
         </p>
     </div>
 </section>
 
-<section id="galleries">
+<section id="galleries" class="text-on-background">
     <div  class="container w-50">
         <h2  class="text-center h4" style="color: #084672">Нашата Визија</h2>
-        <p  class="text-center" style="color: #007BFF">
+        <p  class="text-center" style="color: #084672">
             Веруваме дека зачувувањето на историјата е нешто што е непроценливо богатство за сите нас.
             Оваа апликација има за цел да стане платформа која ќе ги инспирира и образува корисниците, ширејќи го знаењето за нашето наследство
             и со тоа ќе ја поврзиме новата генерација со корените на нејзината историја.
@@ -101,5 +170,6 @@
         <h2></h2>
     </div>
 </section>
+
 </body>
 </html>

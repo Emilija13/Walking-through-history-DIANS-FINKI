@@ -16,6 +16,24 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/static/pageStyle.css">
 </head>
+
+<style>
+    body {
+        background-image: url('https://visitmacedonia.eu/wp-content/uploads/2020/07/Stobi-2.jpg');
+        background: linear-gradient(to bottom, rgba(227, 242, 253, 0.5) 0%, rgba(227, 242, 253, 0.5) 50%, rgba(227, 242, 253, 1) 100%), url('https://visitmacedonia.eu/wp-content/uploads/2020/07/Stobi-2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-blur: 5px; /* You can adjust the blur effect as needed */
+        background-color: rgba(227, 242, 253, 0.5); /* Adjust the background color and opacity as needed */
+    }
+    .btn-primary {
+
+        background-color: #263956; /* Promenite ovu vrednost u željenu boju */
+        color: #ffffff; /* Postavite boju teksta prema potrebi */
+    }
+</style>
+
 <body style="background-color:#e3f2fd">
 <!--NAVIGATION BAR-->
 <nav class="navbar">
@@ -60,30 +78,30 @@
     <h3 class="text-center" style="color: #084672">Доколку имате прашања или предлози, контактирајте не:</h3>
     <form>
         <div class="mb-3">
-            <label for="name" class="form-label" style="color: #007BFF">Name</label>
+            <label for="name" class="form-label" style="color: #084672; font-weight: bold;">Име</label>
             <input type="text" class="form-control" id="name" name="name" required>
         </div>
         <div class="mb-3">
-            <label for="email" class="form-label" style="color: #007BFF">Email</label>
+            <label for="email" class="form-label" style="color: #084672; font-weight: bold;">Електронска пошта</label>
             <input type="email" class="form-control" id="email" name="email" required>
         </div>
         <div class="mb-3">
-            <label for="message" class="form-label" style="color: #007BFF">Message</label>
+            <label for="message" class="form-label" style="color: #084672;font-weight: bold;">Порака</label>
             <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Испрати</button>
     </form>
 </div>
 
 
 </br>
 <!-- Add the text to the bottom of the page -->
-<h4 class="text-center text-sm" style="color: #007BFF">
+<h4 class="text-center text-sm" style="color: #084672">
     Културното наследство е карактер, уметност и историја споени во едно,</br>
     дар кој нè поврзува со минатото и креира иднина.
 </h4>
 </br>
-<p class="text-centre" style="color: #007BFF; text-align: right; margin-right: 10px">Благодарам што сте дел од нашата заедница!</p>
+<p class="text-centre" style="color: #084672; text-align: right; margin-right: 10px">Благодарам што сте дел од нашата заедница!</p>
 </div>
 </body>
 </html>
