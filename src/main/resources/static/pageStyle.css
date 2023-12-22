@@ -102,9 +102,9 @@ body:hover {
 }
 
 .heritage-item-link {
-    position: relative; /* Resetting position for the heritage-item-link */
+    display : flex;
+    align-items : center;
     z-index: 0; /* Ensuring heritage-item-link is below the edit-link */
-    display: block; /* Making it a block-level element to take the full width */
     color: inherit; /* Inherit the color from the parent */
     text-decoration: none; /* Add this to remove the underline, adjust as needed */
     height: 100%; /* Make the heritage-item-link take the full height of heritage-item */
@@ -130,3 +130,10 @@ body:hover {
     visibility: hidden;
 }
 
+.user-nav{
+    margin-left: 20px;
+}
+
+.navbar {
+    z-index: 1000; /* Ensure the navbar stays on top */
+}

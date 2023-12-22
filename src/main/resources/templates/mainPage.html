@@ -52,6 +52,28 @@
                         <a class="nav-link px-3" href="/contact">КОНТАКТ</a>
                     </li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right ml-20">
+
+                    <li class="nav-item ml-5" sec:authorize="isAuthenticated()">
+                        <img src="/static/user-icon-white.png" style="width: 35px; height:auto" alt="User Icon">
+                        <a href="#" class="btn btn-primary"
+                           style="background-color: #263956; border-color: #263956; padding-left: 0"
+                           sec:authentication="name">
+                        </a>
+                    </li>
+
+                    <li class="nav-item ml-4" sec:authorize="isAuthenticated()">
+                        <a class="btn btn-primary ml-3" href="/logout">
+                            <i class="fa-solid fa-right-from-bracket"></i> Одјави се
+                        </a>
+                    </li>
+                    <li class="nav-item ml-4" sec:authorize="isAnonymous()">
+                        <a class="btn btn-primary ml-3"
+                           href="/login">
+                            <i class="fa-solid fa-right-to-bracket"></i> Најави се
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -86,18 +108,19 @@
                     </div>
 
                     <div class="pt-1 pb-1 mr-3 ml-3">
-                        <select th:name="city" class="w-100 pt-1 pb-1 pl-3 pr-3 form-control rounded">
-                            <option value="">Одбери град</option>
-                            <option th:each="city : ${cities}" th:value="${city}" th:text="${city}"></option>
+                        <select name="city" class="w-100 pt-1 pb-1 pl-3 pr-3 form-control rounded">
+                            <option value="">Сите градови</option>
+                            <option th:each="cityOption : ${cities}" th:value="${cityOption}" th:text="${cityOption}" th:selected="${cityOption == selectedCity}"></option>
                         </select>
                     </div>
 
                     <div class="pt-1 pb-1 mr-3 ml-3">
-                        <select th:name="category" class="w-100 pt-1 pb-1 pl-3 pr-3 form-control rounded">
-                            <option value="">Одбери категорија</option>
-                            <option th:each="category : ${categories}" th:value="${category}" th:text="${category}"></option>
+                        <select name="category" class="w-100 pt-1 pb-1 pl-3 pr-3 form-control rounded">
+                            <option value="">Сите категории</option>
+                            <option th:each="categoryOption : ${categories}" th:value="${categoryOption}" th:text="${categoryOption}" th:selected="${categoryOption == selectedCategory}"></option>
                         </select>
                     </div>
+
                 </form>
                 <!--SEARCH BAR-->
 
@@ -109,7 +132,9 @@
                             <span class="fa fa-plus">Додади наследство</span>
                         </a>
 
-                        <input type="submit" name="submit" id="submit" value="Избриши наследства" class="btn btn-sm btn-success " style="display: inline">
+                        <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                            <input type="submit" name="submit" id="submit" value="Избриши наследства" class="btn btn-sm btn-danger " style="display: inline">
+                        </th:block>
                     </div>
 
 
@@ -119,16 +144,23 @@
                                 <tr th:each="heritage : ${heritages}">
                                     <!--<input  class="ml-3 mt-3 del-checkbox" type="checkbox" name="heritageIds" th:value="${heritage.getId()}">!-->
                                     <div class="heritage-item mb-1" style="height: 175px" onmouseover="showCheckbox(this)" onmouseout="hideCheckbox(this)">
-                                        <a><input  class="ml-2 mt-2 del-checkbox" type="checkbox" name="heritageIds" th:value="${heritage.getId()}"
-                                        onchange="toggleVisibility(this)" onmouseover="showCheckbox(this.closest('.heritage-item'))"></a>
-                                        <a class="edit-link" th:href="@{/mainPage/edit-form/{id}(id=${heritage.getId()})}">Измени</a>
+                                        <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                                            <a><input  class="ml-2 mt-2 del-checkbox" type="checkbox" name="heritageIds" th:value="${heritage.getId()}"
+                                            onchange="toggleVisibility(this)" onmouseover="showCheckbox(this.closest('.heritage-item'))"></a>
+                                            <a class="edit-link" th:href="@{/mainPage/edit-form/{id}(id=${heritage.getId()})}">Измени</a>
+                                        </th:block>
                                     <a href="#" class="heritage-item-link" style="text-decoration: none; color: inherit;"
                                        th:data-lat="${heritage.getLat()}" th:data-lon="${heritage.getLon()}"
                                        th:data-name="${heritage.getName()}" th:data-city="${heritage.getCity()}"
                                        th:data-category="${heritage.getCategory()}">
-                                            <span class="pl-5 pt-2 pb-1 h3 d-block" th:text="${heritage.getName()}"></span>
+                                        <div class="center">
+                                            <div th:if="${not #authorization.expression('hasRole(''ROLE_ADMIN'')')}">
+                                                <span class="pl-5 pb-1 h3 d-block" style="height:30px"></span>
+                                            </div>
+                                            <span class="pl-5 pb-1 h3 d-block" th:text="${heritage.getName()}"></span>
                                             <span class="pl-5 pb-1 h5 d-block" th:text="${heritage.getCity()}"></span>
                                             <span class="pl-5 pb-2 d-block" th:text="${heritage.getCategory()}"></span>
+                                        </div>
                                     </a>
                                     </div>
                                 </tr>
@@ -224,9 +256,9 @@
                         .setLatLng([lat, lon])
                         .setContent(`
                 <div>
-                    <p><strong>Name:</strong> ${name}</p>
-                    <p><strong>City:</strong> ${city}</p>
-                    <p><strong>Type:</strong> ${category}</p>
+                    <p><strong>Име:</strong> ${name}</p>
+                    <p><strong>Град:</strong> ${city}</p>
+                    <p><strong>Тип:</strong> ${category}</p>
                 </div>
             `)
                         .openOn(map);

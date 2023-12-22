@@ -30,6 +30,7 @@ public class MainPageController {
         model.addAttribute("cities",heritageService.findAllCities());
         model.addAttribute("categories",heritageService.findAllCategories());
         model.addAttribute("heritages",heritageService.findAll());
+
         return "mainPage";
     }
 
@@ -37,11 +38,15 @@ public class MainPageController {
     public String searchHeritage(@RequestParam(name = "name", required = false) String name,
                                  @RequestParam(name = "city", required = false) String city,
                                  @RequestParam(name = "category", required = false) String category, Model model) {
-        model.addAttribute("cities",heritageService.findAllCities());
-        model.addAttribute("categories",heritageService.findAllCategories());
-        model.addAttribute("heritages", heritageService.search(name,city,category));
+        model.addAttribute("cities", heritageService.findAllCities());
+        model.addAttribute("categories", heritageService.findAllCategories());
+        model.addAttribute("heritages", heritageService.search(name, city, category));
+        model.addAttribute("search", name); // Add the name parameter to the model
+        model.addAttribute("selectedCity", city); // Add the selectedCity parameter to the model
+        model.addAttribute("selectedCategory", category); // Add the selectedCategory parameter to the model
         return "mainPage";
     }
+
 
     @GetMapping("/edit-form/{id}")
     public String editMoviePage(@PathVariable Long id, Model model) {

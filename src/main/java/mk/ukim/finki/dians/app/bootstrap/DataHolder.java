@@ -2,6 +2,10 @@ package mk.ukim.finki.dians.app.bootstrap;
 
 import jakarta.annotation.PostConstruct;
 import mk.ukim.finki.dians.app.model.Heritage;
+import mk.ukim.finki.dians.app.model.Role;
+import mk.ukim.finki.dians.app.model.User;
+import mk.ukim.finki.dians.app.repository.UserRepository;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
@@ -11,12 +15,38 @@ import java.util.logging.Handler;
 
 @Component
 public class DataHolder {
-    public static List<Heritage> heritages=new ArrayList<>();
+    public static List<User> users = null;
+
+    private final UserRepository userRepository;
+
+    private final PasswordEncoder passwordEncoder;
+
+    public DataHolder(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+        this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
+    }
 
     @PostConstruct
     public void init() {
-       // heritages.add(new Heritage("1", "Маркови Кули", "Прилеп", "Археолошко наоѓалиште/Тврдина/Кула", 41.3610558, 21.5394503));
-       // heritages.add(new Heritage("2", "Куќата на Мантови", "Прилеп", "Археолошко наоѓалиште/Тврдина/Кула", 41.3557382, 21.5404226));
-       // heritages.add(new Heritage("3", "Скупи", "Скопје", "Археолошко наоѓалиште/Тврдина/Кула", 42.0150515, 21.3942891));
+        users = new ArrayList<>();
+
+        if (userRepository.count() == 0) {
+            users.add(new User(
+                            "admin",
+                            "admin",
+                            "admin",
+                            passwordEncoder.encode("admin"),
+                            Role.ROLE_ADMIN
+                    )
+            );
+            users.add(new User(
+                            "user",
+                            "user",
+                            "user",
+                            passwordEncoder.encode("user"),
+                            Role.ROLE_USER
+                    )
+            );
+            userRepository.saveAll(users);
     }
-}
+}}

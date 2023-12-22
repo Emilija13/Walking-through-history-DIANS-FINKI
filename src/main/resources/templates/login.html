@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Contact</title>
+    <title>Products</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -14,25 +14,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e59232f0a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/static/pageStyle.css">
 </head>
+<body>
 
-<style>
-    body {
-        background-image: url('https://visitmacedonia.eu/wp-content/uploads/2020/07/Stobi-2.jpg');
-        background: linear-gradient(to bottom, rgba(227, 242, 253, 0.5) 0%, rgba(227, 242, 253, 0.5) 50%, rgba(227, 242, 253, 1) 100%), url('https://visitmacedonia.eu/wp-content/uploads/2020/07/Stobi-2.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-blur: 5px; /* You can adjust the blur effect as needed */
-        background-color: rgba(227, 242, 253, 0.5); /* Adjust the background color and opacity as needed */
-    }
-    .btn-primary {
-        color: #ffffff; /* Postavite boju teksta prema potrebi */
-    }
-</style>
-
-<body style="background-color:#e3f2fd">
 <!--NAVIGATION BAR-->
 <nav class="navbar">
     <div class="image-container">
@@ -59,7 +45,7 @@
                     </li>
                     <li class="nav-item">
                         <!--tuka home-->
-                        <a class="nav-link active px-3" href="/contact">КОНТАКТ</a>
+                        <a class="nav-link px-3" href="/contact">КОНТАКТ</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right ml-20">
@@ -90,40 +76,34 @@
 </nav>
 <!--NAVIGATION BAR-->
 
+<section>
+    <div class="container" xmlns:th="http://www.thymeleaf.org">
+        <form class="form-signin mt-xl-5" method="post" action="/login">
+            <h2 class="form-signin-heading">Најави се</h2>
+            <p>
+                <label for="username" class="sr-only">Username</label>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Username" required=""
+                       autofocus="">
+            </p>
+            <p>
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password"
+                       required="">
+            </p>
 
+            <div th:if="${param.error}" th:text="${param.error}" class="text-danger"></div>
 
+            <div class="row">
+                <div class="col-md-3">
+                    <button id="submit" class="btn btn-lg btn-primary btn-block" type="submit">Најави се</button>
+                </div>
+                <div class="col-md-3">
+                    <a href="/register" class="btn btn-lg btn-block btn-light">Регистрирај се</a>
+                </div>
+            </div>
+        </form>
+    </div>
 
-<div class="container">
-    </br>
-    <h3 class="text-center" style="color: #084672">Доколку имате прашања или предлози, контактирајте не:</h3>
-    <form>
-        <div class="mb-3">
-            <label for="name" class="form-label" style="color: #084672; font-weight: bold;">Име</label>
-            <input type="text" class="form-control" id="name" name="name" required>
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label" style="color: #084672; font-weight: bold;">Електронска пошта</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label" style="color: #084672;font-weight: bold;">Порака</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="
-        background-color: #263956; border-color: #263956
-">Испрати</button>
-    </form>
-</div>
-
-
-</br>
-<!-- Add the text to the bottom of the page -->
-<h4 class="text-center text-sm" style="color: #084672">
-    Културното наследство е карактер, уметност и историја споени во едно,</br>
-    дар кој нè поврзува со минатото и креира иднина.
-</h4>
-</br>
-<p class="text-centre" style="color: #084672; text-align: right; margin-right: 10px">Благодарам што сте дел од нашата заедница!</p>
-</div>
+</section>
 </body>
 </html>
