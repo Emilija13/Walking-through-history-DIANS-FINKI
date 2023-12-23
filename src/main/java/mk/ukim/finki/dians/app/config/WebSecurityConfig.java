@@ -35,11 +35,12 @@ public class WebSecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests( (requests) -> requests
-                        .requestMatchers("/", "/home", "/contact", "/about", "/mainPage", "/mainPage/search", "/assets/**", "/register")
+                        .requestMatchers("/","/static/**" , "/home", "/contact", "/about", "/mainPage", "/mainPage/search", "/assets/**", "/register")
                         .permitAll()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest()
                         .authenticated()
+
                 )
                 .formLogin((form) -> form
                         .loginPage("/login")
