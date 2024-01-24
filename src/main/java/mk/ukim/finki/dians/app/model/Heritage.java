@@ -15,7 +15,6 @@ public class Heritage {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
-    //private String ID;
     private String name;
     private String city;
     private String category;

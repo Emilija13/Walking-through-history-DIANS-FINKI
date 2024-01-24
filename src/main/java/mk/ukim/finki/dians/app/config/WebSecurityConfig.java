@@ -35,7 +35,7 @@ public class WebSecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests( (requests) -> requests
-                        .requestMatchers("/","/static/**" , "/home", "/contact", "/about", "/mainPage", "/mainPage/search", "/assets/**", "/register")
+                        .requestMatchers("/","/static/**" , "/home", "/contact", "/about", "/historicalLegacies", "/historicalLegacies/search", "/assets/**", "/register")
                         .permitAll()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest()
@@ -46,7 +46,7 @@ public class WebSecurityConfig {
                         .loginPage("/login")
                         .permitAll()
                         .failureUrl("/login?error=BadCredentials")
-                        .defaultSuccessUrl("/mainPage", true)
+                        .defaultSuccessUrl("/historicalLegacies", true)
                 )
                 .logout((logout) -> logout
                         .logoutUrl("/logout")

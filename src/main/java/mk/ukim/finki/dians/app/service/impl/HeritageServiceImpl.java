@@ -1,7 +1,8 @@
-package mk.ukim.finki.dians.app.service;
+package mk.ukim.finki.dians.app.service.impl;
 
 import mk.ukim.finki.dians.app.model.Heritage;
 import mk.ukim.finki.dians.app.repository.HeritageRepository;
+import mk.ukim.finki.dians.app.service.HeritageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,35 +10,17 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class HeritageService {
+public class HeritageServiceImpl implements HeritageService {
 
     @Autowired
     private HeritageRepository heritageRepository;
-    //private final HeritageRepo heritageRepo;
 
-    //public HeritageService(HeritageRepo heritageRepo) {
-     //   this.heritageRepo = heritageRepo;
-    //}
 
     public List<Heritage> findAll() {
         return heritageRepository.findAll();
     }
 
-    /*public List<Heritage> findByName(String name) {
-        return heritageRepo.findByName(name);
-    }
 
-    public List<Heritage> searchByCity(String city) {
-        return heritageRepo.searchByCity(city);
-    }
-
-    public List<Heritage> searchByCategory(String category) {
-        return heritageRepo.searchByCategory(category);
-    }
-
-    public List<Heritage> searchByNameAndCity(String name, String city) {
-        return heritageRepo.searchByNameAndCity(name, city);
-    }*/
     public List<String> findAllCities() {
         return heritageRepository.findAllCities();
     }

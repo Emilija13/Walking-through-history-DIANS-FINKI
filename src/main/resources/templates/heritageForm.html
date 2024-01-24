@@ -39,7 +39,7 @@
                         <a class="nav-link px-3" aria-current="page" href="/home">ПОЧЕТНА</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active px-3" href="/mainPage">ИСТОРИСКИ НАСЛЕДСТВА</a>
+                        <a class="nav-link active px-3" href="/historicalLegacies">ИСТОРИСКИ НАСЛЕДСТВА</a>
                     </li>
                     <li class="nav-item">
                         <!--tuka home-->
@@ -81,7 +81,7 @@
 <div class="container" id="h-form">
     <div class="row">
         <div class="col-md-6 form-container">
-            <form id="myForm" th:action="@{/mainPage/save}" th:method="POST" onkeydown="return handleEnterKey(event)">
+            <form id="myForm" th:action="@{/historicalLegacies/save}" th:method="POST" onkeydown="return handleEnterKey(event)">
                 <input id="id" type="hidden" name="id"
                        th:value="(${heritage} != null ? ${heritage.getId()} : '')">
                 <div class="form-group mb-4" style="width:400px">
@@ -160,7 +160,7 @@
                 </div>
                 <div class="button-container">
                     <button id="submit" type="submit" class="btn btn-primary">Зачувај</button>
-                    <a type="button" class="btn btn-primary" href="/mainPage">Назад</a>
+                    <a type="button" class="btn btn-primary" href="/historicalLegacies">Назад</a>
                 </div>
             </form>
         </div>

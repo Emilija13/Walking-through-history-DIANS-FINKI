@@ -1,8 +1,7 @@
 package mk.ukim.finki.dians.app.controller;
 
-import jakarta.servlet.http.HttpSession;
 import mk.ukim.finki.dians.app.model.Heritage;
-import mk.ukim.finki.dians.app.service.HeritageService;
+import mk.ukim.finki.dians.app.service.impl.HeritageServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,16 +10,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("/mainPage")
-public class MainPageController {
+@RequestMapping("/historicalLegacies")
+public class HistoricalLegaciesController {
 
     @Autowired
-    private HeritageService heritageService;
-    //public final HeritageService heritageService;
+    private HeritageServiceImpl heritageService;
 
-    //public MainPageController(HeritageService heritageService) {
-     //   this.heritageService = heritageService;
-    //}
 
     @GetMapping
     public String  getMainPage(Model model)
