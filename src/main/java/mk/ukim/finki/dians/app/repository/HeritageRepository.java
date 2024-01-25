@@ -19,7 +19,6 @@ public interface HeritageRepository extends JpaRepository<Heritage, Long> {
             String city,
             String category
     );
-    List <Heritage> findByNameLikeOrCityLikeOrCategoryLike();
 
     Optional<Heritage> findById(Long id);
 
