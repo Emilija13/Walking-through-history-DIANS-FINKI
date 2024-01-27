@@ -28,7 +28,6 @@ public class HistoricalLegaciesController {
 
         return "mainPage";
     }
-
     @GetMapping("/search")
     public String searchHeritage(@RequestParam(name = "name", required = false) String name,
                                  @RequestParam(name = "city", required = false) String city,
