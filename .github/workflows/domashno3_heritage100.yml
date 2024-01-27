@@ -50,4 +50,4 @@ jobs:
           app-name: 'heritage100'
           slot-name: 'Production'
           package: '*.jar'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C0698CDD6A5947F5BBCA408520A0678A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_44047828D2B24A568A961D3FC78D5D22 }}
