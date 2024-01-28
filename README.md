@@ -1,5 +1,8 @@
+
 # DIANS-FINKI
-![fcse_logo](https://2018.skopje.wordcamp.org/files/2018/09/Logo_FINKI_UKIM_EN.jpg)
+
+
+# Walking through history
 
 https://walking-through-history-7i12.onrender.com/home
 
